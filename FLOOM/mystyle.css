@@ -1,0 +1,229 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+svg {
+    background-color: lightblue;
+    width: 100%;
+    height: 50vh;
+}
+
+#flower2 {
+    animation: spin 5s linear infinite alternate;
+    offset-path: path('m20.71.39C8.18,13.79.5,31.78.5,51.57c0,41.42,33.58,75,75,75s75-33.58,75-75c0-19.82-7.7-37.82-20.26-51.23');
+    offset-rotate: auto 45deg;
+    transform: scale(0.7);
+}
+
+#flower3 {
+    animation: spin 6s linear infinite alternate;
+    offset-path: path('m20.71.39C8.18,13.79.5,31.78.5,51.57c0,41.42,33.58,75,75,75s75-33.58,75-75c0-19.82-7.7-37.82-20.26-51.23');
+    offset-rotate: auto 45deg;
+    transform: scale(0.7);
+}
+
+#flower4 {
+    animation: spin 7s linear infinite alternate;
+    offset-path: path('m20.71.39C8.18,13.79.5,31.78.5,51.57c0,41.42,33.58,75,75,75s75-33.58,75-75c0-19.82-7.7-37.82-20.26-51.23');
+    offset-rotate: auto 45deg;
+    transform: scale(0.7);
+}
+
+#flower5 {
+    animation: spin 8s linear infinite alternate;
+    offset-path: path('m20.71.39C8.18,13.79.5,31.78.5,51.57c0,41.42,33.58,75,75,75s75-33.58,75-75c0-19.82-7.7-37.82-20.26-51.23');
+    offset-rotate: auto 45deg;
+    transform: scale(0.7);
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffb5fd;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    background-color: #add8e6;
+}
+
+.item {
+    flex-basis: 30%;
+}
+
+.section1, .section2, .section3, .section4 {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p{
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Lato', sans-serif;
+    color:#333;
+}
+
+#title{
+    font-family: 'Dancing Script', cursive;
+}
+
+#h1{
+    fill:#4a7c59;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+#h2{
+    fill: #4a7c59;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+#p {
+    fill: #333;
+    position: absolute;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+
+.section1 svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.section3 svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1{
+    color:#4a7c59;
+    font-size: 80px;
+    font-family: 'Dancing Script', cursive;
+}
+
+h2, h3 {
+    color: #4a7c59;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+}
+
+ul {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        margin: 20px 10px;
+    }
+    ul {
+        padding: 0;
+    }
+}
+
+@keyframes spin {
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+/* Animation on section2 */
+.section2 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section2 .item {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.section2 .item:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+.section2 .item:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+.section2 .item:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.section2 .item:nth-child(3) {
+    animation-delay: 1s;
+}  
+/* Animation on section2 */
+
+/* Animation on section4 */
+.section4 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section4 .item {
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.section4 .item:hover {
+    transform: translateY(-5px);
+    opacity: 1;
+}
+
+.section4 .item:nth-child(1) {
+    animation-delay: 0.6s;
+}
+
+.section4 .item:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.section4 .item:nth-child(3) {
+    animation-delay: 1s;
+}  
+/* Animation on section4 */
